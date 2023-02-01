@@ -1020,16 +1020,6 @@ print("hello world!")
   <p>해결 방법으로는 Fetch Join이라고 불리는 JPQL의 join fetch를 사용하는 방법이 있으며, 또 다른 방법으로는 <code>@EntityGraph</code>를 사용하는 방법, <code>@Fetch(FetchMode.SUBSELECT)</code>를 사용하는 방법, <code>@BatchSize</code>를 사용해 조절하거나 전역적인 batch-size를 설정하는 방법이 있습니다.</p>
   <p>각 해결방안에 대한 유의점은 작성하지 않습니다.</p>
 </details>
-
-### nodeJS
-
-<details>
-  <summary>nodeJS는 싱글 스레드인가 멀티 스레드인가?</summary>
-  <b>nodeJS는 비동기(Asynchronous)실행 기반의 특수한 멀티 스레드(Multi-thread)모델</b><br/>
-  Node.js 내부에서의 비동기 실행 구현 방법 중 한 가지(File I/O 파일 입출력 작업에 관한)<br/><br/>
-  1) 메인 스레드는 빠르게 처리할 수 있는 작업들을 집중해서 ‘혼자' 처리하고,<br/>
-  2) 파일 읽기와 같이 시간이 오래 걸리는 작업은 다른 스레드에 맡긴다.
-</details>
  
 ## 기타
 
